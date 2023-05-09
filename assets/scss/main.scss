@@ -1,0 +1,23 @@
+$border-radius: 8px;
+
+@mixin glassBlur() {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: $border-radius;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(5.1px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.konvajs-content {
+  border: none;
+  overflow: hidden !important;
+  background-image: linear-gradient(45deg, #b0b0b03e 25%, transparent 25%),
+    linear-gradient(-45deg, #b0b0b03e 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #b0b0b03e 75%),
+    linear-gradient(-45deg, transparent 75%, #b0b0b03e 75%) !important;
+  background-size: 20px 20px !important;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px !important;
+  background-repeat: repeat !important;
+}

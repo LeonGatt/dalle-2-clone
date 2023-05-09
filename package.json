@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.194",
+    "@types/uuid": "^9.0.1",
+    "@vueuse/core": "^9.13.0",
+    "@vueuse/nuxt": "^9.13.0",
+    "nuxt": "^3.2.3",
+    "sass": "^1.59.0",
+    "sass-loader": "^13.2.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.1.96",
+    "@pinia/nuxt": "^0.4.7",
+    "h3-formidable": "^0.2.2",
+    "konva": "^8.4.2",
+    "lodash": "^4.17.21",
+    "openai": "^3.2.1",
+    "pinia": "^2.0.33",
+    "uuid": "^9.0.0",
+    "vue-konva": "^3.0.2",
+    "vue-use": "^0.2.0",
+    "vuetify": "^3.1.8"
+  }
+}
